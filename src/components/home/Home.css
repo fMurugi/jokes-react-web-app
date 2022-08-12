@@ -1,0 +1,8 @@
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 32px;
+    height: 100%;
+    border-bottom:2px solid whitesmoke
+}

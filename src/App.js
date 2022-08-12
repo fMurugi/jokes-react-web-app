@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import axios from  'axios'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css'
+
+import { Home} from  './components/home/Home';
+
+import MenuCard  from "./components/menuCard/MenuCard";
+import MainJokes from "./components/MainJokesCard/MainJokesCard";
+
+
+
+
+
+// const fetchCategories = () => {
+//     const url = "https://api.chucknorris.io/jokes/categories";
+//      return fetch(url).then((response)=>{return response.json()}).then((response)=>{ console.log({response});return response.value})
+//   }
+
+ 
+const App = ()=>{
+
+    
+
+
+    return(
+        <div className="app">
+           
+            <Home></Home>
+
+
+       </div>
+       
+    )
 }
 
 export default App;
